@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        function mostrarTablaMultiplicar() {
+            // Obtener el valor ingresado por el usuario
+            const numero = parseFloat(document.getElementById('numeroInput').value);
+
+            // Verificar si el valor es un número
+            if (!isNaN(numero)) {
+                // Comprobar si el número es mayor o igual a 0
+                if (numero >= 0) {
+                    console.log(`Tabla de multiplicar del número ${numero}:`);
+                    for (let i = 1; i <= 10; i++) {
+                        console.log(`${numero} x ${i} = ${numero * i}`);
+                    }
+                } else {
+                    console.warn('Por favor, ingrese un número mayor o igual a 0.');
+                }
+            } else {
+                console.warn('Por favor, ingrese un número válido.');
+            }
+        }
+    </script>
+</body>
+</html>

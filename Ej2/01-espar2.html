@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par o impar</title>
+</head>
+<body>
+    <script>
+        const input = prompt("Introduzca un número:");
+
+        if (isNaN(input)) {
+            console.log("El valor ingresado no es un número válido.");
+        } else {
+            const num = parseFloat(input); 
+            
+            if (num % 2 === 0) {
+                console.log(`${num} es un número PAR.`);
+            } else {
+                console.log(`${num} es un número IMPAR.`);
+            }
+        }
+    </script>
+</body>
+</html>

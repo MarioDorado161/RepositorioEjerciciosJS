@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*   6. Crea un script en 05-tablamult.html que solicitado un número 
+                nos muestre la tabla de multiplicar de dicho número por consola
+        */
+                
+                const numero = prompt("Introduzca un número:");
+                if (!isNaN(numero)) {
+                    const num = parseInt(numero);
+        
+                    console.log(`Tabla de multiplicar del ${num}:`);
+                    for (let i = 1; i <= 10; i++) {
+                        const resultado = num * i;
+                        console.log(`${num} x ${i} = ${resultado}`);
+                    }
+                } else {
+                    console.log("Por favor, ingrese un número válido.");
+                }
+            </script>
+</body>
+</html>

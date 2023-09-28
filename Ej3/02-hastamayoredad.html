@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hasta mayor de edad </title>
+</head>
+<body>
+    <script>
+        let edad;
+
+        do {
+            edad = prompt("Introduzca una edad:");
+
+            if (!isNaN(edad)) {
+                edad = parseInt(edad);
+                if (edad >= 18) {
+                    console.log("¡Es mayor de edad!");
+                }
+            } else {
+                console.log("Eres menor de edad.");
+            }
+        } while (edad < 18);
+    </script>
+</body>
+</html>

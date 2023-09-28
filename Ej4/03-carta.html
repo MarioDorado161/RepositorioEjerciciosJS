@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+/*   4. Crea un script 03-carta.html que cree una carta personalizada sustituyendo los datos de las 
+        variables que solicite al usuario y luego lo muestre en el documento. Ha de usar la función 
+        trim en cada dato que lea para eliminar espacios. 
+*/
+        const nombre = prompt("Ingrese su nombre:").trim();
+        const curso = prompt("Ingrese el nombre del curso:").trim();
+        const localidad = prompt("Ingrese la localidad:").trim();
+        const fechaInicio = prompt("Ingrese la fecha de inicio del curso:").trim();
+        const fechaFin = prompt("Ingrese la fecha de fin del curso:").trim();
+
+          // Crear la carta personalizada con los datos ingresados
+        const carta = 
+        ` Estimado ${nombre},
+
+        Bienvenido al curso de ${curso} que se celebrará en la localidad de ${localidad} entre 
+        las fechas ${fechaInicio} y ${fechaFin}. Espero que el curso se desarrolle según sus 
+        expectativas. Estaremos encantados de atenderle.
+
+        Atentamente,
+        La dirección.`;
+    </script>
+</body>
+</html>
